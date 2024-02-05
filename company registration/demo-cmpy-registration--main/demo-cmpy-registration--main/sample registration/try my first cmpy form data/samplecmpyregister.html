@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="jobTitle">Job Title*</label><br> 
+            <input type="text" id="jobTitle" name="jobTitle" required> </div> 
+            <br>
+            <div> <label for="jobLocation">Job Location* (Select From The Drop-down)</label><br> 
+               <input type="jobLocation" name="jobLocation" required> 
+               <br><br>
+            </div> 
+            <div> 
+                <label for="noOfOpenings">No Of Openings*</label><br>
+                 <input type="number" id="noOfOpenings" name="noOfOpenings" min="1" required>
+                 <br><br>
+             </div>
+             <div>
+                <button type="submit">Submit</button> <button type="reset">Reset</button> </div> 
+                <br><br>
+            </div> 
+               </form>
+</body>
+</html>
+<style>
+    .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.form-container button {
+  width: 320px;
+  height: 45px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form-container button:hover {
+  background-color: #3e8e41;
+}
+
+.shake {
+  animation: shake 0.5s;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.form-container .error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+</style>
